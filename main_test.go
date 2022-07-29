@@ -8,7 +8,7 @@ import (
 )
 
 func TestUpperCaseHandler(t *testing.T) {
-	req := httptest.NewRequest(http.MethodGet, "/?", nil)
+	req := httptest.NewRequest(http.MethodGet, "/test?", nil)
 	w := httptest.NewRecorder()
 	upperCaseHandler(w, req)
 	res := w.Result()
