@@ -29,5 +29,5 @@ func upperCaseHandler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/upper", upperCaseHandler)
-	log.Fatal(http.ListenAndServe(":1234", nil))
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
