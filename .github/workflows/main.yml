@@ -21,6 +21,11 @@ jobs:
 
       - name: Test
         run: go test
+        
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          base: 'master'
 
       - name: Build
         run: go build
